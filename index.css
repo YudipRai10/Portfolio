@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    60deg,
+    rgb(250, 178, 215) 0%,
+    rgb(216, 172, 224) 50%,
+    rgb(134, 208, 233) 100%
+  );
+  background-size: 200% 200%;
+  animation: another 3s ease-in-out infinite;
+}
+@keyframes another {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.name {
+  color: white;
+  font-weight: bold;
+}
+.home {
+  height: 350px;
+}
+.home img {
+  border-radius: 50%;
+  cursor: auto;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+}
+.links a:hover {
+  text-shadow: 5px 5px 10px white;
+}
+.projects {
+  height: 500px;
+}
+.headingProjects {
+  text-align: center;
+}
+.headingProjects:hover {
+  background-color: white;
+  box-shadow: 3px 3px 5px black;
+}
+.headingProjects p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.headingProjects p {
+  color: hsl(204, 53%, 43%);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerProjects {
+  height: 350px;
+}
+.card {
+  box-shadow: 3px 3px 5px black;
+}
+
+.card button {
+  width: 100px;
+  margin: auto;
+}
+.card button:hover {
+  background-color: blue;
+  color: white;
+}
+.card input[type="button"] {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+.card input[type="button"]:hover {
+  background-color: rgb(59, 59, 59);
+}
+.skills {
+  height: 200px;
+}
+.skills h1 {
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.skills h1:hover {
+  background-color: beige;
+  font-style: italic;
+  box-shadow: 3px 3px 5px black;
+}
+.mycontact {
+  height: 420px;
+}
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.contactContainer img {
+  border-radius: 50%;
+}
+.contactText {
+  text-align: center;
+}
+.contactText p {
+  font-size: 17px;
+  word-spacing: 3px;
+  font-weight: bold;
+}
+.contactText h1 {
+  font-size: 50px;
+}
+.contactList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 35px;
+  border-radius: 20px;
+  background-color: white;
+}
+.contactList div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.client-contact {
+  height: 800px;
+  padding: 100px;
+}
+.client-container {
+  border: 2px solid rebeccapurple;
+  border-radius: 30px;
+  background-color: white;
+  height: 670px;
+}
+.contact-form h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+  font-style: italic;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+form input[type="button"] {
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+form input[type="button"]:hover {
+  background-color: rgb(39, 39, 39);
+}
+/*  */
+
+@media (max-width: 720px) {
+  .home img {
+    width: 120px;
+  }
+  .containerProjects .card {
+    display: block !important;
+  }
+}
+@media (max-width: 480px) {
+  .headingProjects p {
+    font-size: 12px;
+  }
+  .contactContainer img {
+    width: 100px;
+  }
+  .contactContainer h1 {
+    font-size: 20px;
+  }
+  .contactList,
+  .contactListdiv {
+    display: block;
+    width: 250px;
+  }
+  .client-container {
+    border: none;
+    background: none;
+  }
+  .contact-form {
+    position: relative;
+    bottom: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-form form {
+    display: block;
+  }
+  .client-container {
+    height: 500px;
+  }
+}
+@media (max-width: 575px) {
+  .line {
+    display: none;
+  }
+  .containerProjects {
+    padding-top: 30px;
+  }
+  .card {
+    height: 6rem;
+    margin-top: 20px;
+  }
+  .card img {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .card {
+    width: 100% !important;
+  }
+}

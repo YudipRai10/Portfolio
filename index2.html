@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/841ba55fdb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div class="mycontact">
+        <div class="contactContainer">
+          <img src="./my pp photo jpf.jpg" alt="profile picture" />
+          <div class="contactText">
+            <p>Get in Touch</p>
+            <h1>Contact Me</h1>
+          </div>
+          <div class="contactList">
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>yudip11@gmail.com</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <p>Yudip Rai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="client-contact">
+        <div class="client-container">
+          <div class="contact-form">
+            <h1>Enter Your Contact Info Here:</h1>
+            <form>
+              <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" minlength="7" />
+              </div>
+
+              <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" />
+              </div>
+
+              <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+              </div>
+
+              <div>
+                <label for="phone">Phone no:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="1234567890"
+                  pattern="[0-9]{10}"
+                />
+              </div>
+
+              <div>
+                <label for="favcolor">Select your fav color:</label>
+                <input type="color" id="favcolor" name="favcolor" />
+              </div>
+
+              <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" />
+              </div>
+
+              <div>
+                <label for="birthdaytime">Birthday (date and time):</label>
+                <input
+                  type="datetime-local"
+                  id="birthdaytime"
+                  name="birthdaytime"
+                />
+              </div>
+
+              <div>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div>
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile" />
+              </div>
+
+              <div>
+                <label for="bdaymonth">Birthday (month and year):</label>
+                <input type="month" id="bdaymonth" name="bdaymonth" />
+              </div>
+
+              <div>
+                <label for="Mr">Mr.</label>
+                <input type="radio" id="Mr" value="Mr" name="title" />
+                <label for="Ms">Ms.</label>
+                <input type="radio" id="Ms" value="Ms" name="title" />
+              </div>
+
+              <div>
+                <label for="payment">Payment:</label>
+                <select id="payment">
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="giftcard">Giftcard</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="subscribe">Subscribe</label>
+                <input type="checkbox" id="subscribe" />
+              </div>
+
+              <div class="btns">
+                <a href="./index.html" target="_self"
+                  ><input type="button" value="Submit"
+                /></a>
+                <a href="#"><input type="button" value="Reset" /></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
